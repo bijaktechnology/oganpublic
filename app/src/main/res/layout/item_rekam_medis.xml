@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+  <android.support.v7.widget.CardView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/spacing_normal"
+      android:layout_marginLeft="@dimen/spacing_double"
+      android:layout_marginRight="@dimen/spacing_double"
+      android:layout_marginBottom="@dimen/spacing_normal"
+      android:foreground="?android:selectableItemBackground"
+      >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitle"
+        android:background="@drawable/bg_white_rounded"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_double"
+        >
+
+
+      <TextView
+          android:id="@id/txtDate"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/imgContent"
+          android:layout_marginTop="@dimen/spacing_half"
+          android:text="@string/login"
+          android:textColor="@color/aggresive_red"
+          />
+      <TextView
+          android:id="@id/txtJenisPenyakit"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/imgContent"
+          android:layout_marginTop="@dimen/spacing_half"
+          android:text="@string/login"
+          android:textColor="@color/black"
+          android:textSize="15sp"
+          />
+      <TextView
+          android:id="@id/txtNameRs"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/imgContent"
+          android:layout_marginTop="@dimen/spacing_half"
+          android:text="@string/login"
+          android:textColor="@color/colorGreyText"
+          />
+
+    </LinearLayout>
+  </android.support.v7.widget.CardView>
+</LinearLayout>

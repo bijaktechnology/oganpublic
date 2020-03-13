@@ -1,0 +1,136 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/yellow</item>
+    </style>
+
+    <!--Digits-->
+    <style name="Digits" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="ThemeMenuToolbar" parent="ThemeOverlay.AppCompat">
+        <item name="android:colorControlNormal">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppToolbar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:colorControlNormal">@color/white</item>
+    </style>
+
+    <style name="HorizontalDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#2000</item>
+    </style>
+
+    <style name="MaterialShadow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/spacing_half</item>
+        <item name="android:background">@drawable/ab_shadow_to_bottom</item>
+    </style>
+
+    <style name="MarkerInfoLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginLeft">@dimen/spacing_double</item>
+        <item name="android:layout_marginRight">@dimen/spacing_double</item>
+        <item name="android:layout_marginTop">@dimen/spacing_normal</item>
+    </style>
+
+    <style name="MarkerInfoLineLabel">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/text_small_body</item>
+    </style>
+
+    <style name="MarkerInfoLineContent">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:textSize">@dimen/text_small_body</item>
+        <item name="fontPath">fonts/avenir_medium.ttf</item>
+    </style>
+
+    <style name="MainMenuCard">
+        <item name="android:layout_width">276dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_card</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/spacing_double</item>
+        <item name="android:paddingRight">@dimen/spacing_double</item>
+        <item name="android:layout_marginTop">12dp</item>
+    </style>
+
+    <style name="MainMenuCardImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginRight">@dimen/spacing_double</item>
+    </style>
+
+    <style name="MainMenuCardText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/gray_4a</item>
+    </style>
+
+    <style name="ProfileComponent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/spacing_triple</item>
+        <item name="android:layout_marginRight">@dimen/spacing_triple</item>
+        <item name="android:lineSpacingExtra">5.5sp</item>
+        <item name="android:textColor">?colorPrimary</item>
+        <item name="android:textSize">@dimen/text_small_body</item>
+    </style>
+
+    <style name="ProfileComponent.TextInputLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ProfileComponent.EditText">
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:textColor">@color/gray_4a</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ProfileComponent.TextInputLayout.Register">
+        <item name="android:layout_marginRight">@dimen/spacing_double</item>
+        <item name="android:layout_marginLeft">@dimen/spacing_double</item>
+    </style>
+
+    <style name="ItemFamilyLabel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/gray_69</item>
+        <item name="android:textSize">@dimen/text_tiny_body</item>
+    </style>
+
+    <style name="ItemFamilyText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/spacing_half</item>
+        <item name="android:textColor">@color/gray_4a</item>
+        <item name="android:textSize">@dimen/text_small_body</item>
+    </style>
+
+    <style name="TextNoData">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">@dimen/text_large_body</item>
+        <item name="android:text">@string/error_no_data</item>
+    </style>
+
+</resources>

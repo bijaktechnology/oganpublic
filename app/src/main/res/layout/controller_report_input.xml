@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?actionBarSize"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/report_img_container"
+                android:layout_width="match_parent"
+                android:layout_height="264dp"
+                android:layout_marginLeft="@dimen/spacing_double"
+                android:layout_marginRight="@dimen/spacing_double"
+                android:layout_marginTop="@dimen/spacing_double">
+
+                <ImageView
+                    android:id="@+id/report_input_img_report"
+                    android:layout_width="match_parent"
+                    android:layout_height="236dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg_splash"/>
+
+                <TextView
+                    android:id="@+id/report_input_txt_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/report_input_img_report"
+                    android:layout_alignLeft="@id/report_input_img_report"
+                    android:layout_alignRight="@id/report_input_img_report"
+                    android:padding="@dimen/spacing_double"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_headline"
+                    tools:text="Jalan Rusak"/>
+
+                <ImageView
+                    android:id="@+id/report_input_img_category"
+                    android:layout_width="@dimen/dimen_56dp"
+                    android:layout_height="@dimen/dimen_56dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/spacing_triple"
+                    android:background="@drawable/circle_white"
+                    android:src="@drawable/ic_ambulance"/>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/report_img_container"
+                android:layout_alignRight="@id/report_img_container"
+                android:layout_below="@id/report_img_container"
+                android:layout_marginTop="@dimen/spacing_double"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/report_input_inp_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_normal"
+                    android:hint="@string/title"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"/>
+
+                <EditText
+                    android:id="@+id/report_input_inp_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_normal"
+                    android:hint="@string/description"
+                    android:imeOptions="actionDone"
+                    android:inputType="textMultiLine"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>
+

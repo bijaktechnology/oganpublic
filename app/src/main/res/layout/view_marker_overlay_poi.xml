@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_card_half"
+    android:elevation="@dimen/spacing_double"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/spacing_double">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGrey"
+        >
+
+        <TextView
+            android:id="@id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="?selectableItemBackgroundBorderless"
+            android:padding="@dimen/spacing_normal"
+            android:text="@string/close"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/poi_overlay_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/spacing_normal"
+        android:paddingLeft="@dimen/spacing_triple"
+        android:paddingRight="@dimen/spacing_triple"
+        android:paddingTop="@dimen/spacing_normal">
+
+        <TextView
+            android:id="@+id/poi_overlay_btn_information"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/spacing_normal"
+            android:layout_weight="1"
+            android:background="@drawable/bg_pager_poi_overlay"
+            android:gravity="center"
+            android:padding="@dimen/spacing_normal"
+            android:text="@string/poi_overlay_information"/>
+
+        <TextView
+            android:id="@+id/poi_overlay_btn_rooms"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_normal"
+            android:layout_weight="1"
+            android:background="@drawable/bg_pager_poi_overlay_unselected"
+            android:gravity="center"
+            android:padding="@dimen/spacing_normal"
+            android:text="@string/poi_overlay_available_rooms"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/poi_overlay_information_container"
+            layout="@layout/view_marker_overlay_poi_information"/>
+
+        <include
+            android:id="@+id/poi_overlay_room_container"
+            layout="@layout/view_marker_overlay_poi_rooms"
+            android:visibility="gone"/>
+
+        <ProgressBar
+            android:id="@+id/poi_overlay_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+
+</LinearLayout>

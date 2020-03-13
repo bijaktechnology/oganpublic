@@ -1,0 +1,194 @@
+<resources>
+    <string name="app_name">Ogan Lopian</string>
+    <string name="map_api_key">AIzaSyAWIoHklPCqim0doPCh_7e8yNyKi6XytcI</string>
+
+    <!--Common-->
+    <string name="photo">Foto</string>
+    <string name="map">Peta</string>
+    <string name="exit">Keluar</string>
+    <string name="search">Cari</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="comment">Komentar</string>
+    <string name="send">Kirim</string>
+    <string name="chat">Chat</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="citizen_report">Laporan Warga</string>
+    <string name="report_detail">Detail Report</string>
+    <string name="choose_category">Pilih kategori</string>
+    <string name="title">Judul</string>
+    <string name="description">Keterangan</string>
+    <string name="report">Laporan</string>
+
+    <string name="other_setting_title">Pengaturan</string>
+
+    <!--Report Status-->
+    <string name="status_wait">Menunggu</string>
+    <string name="status_process">Proses</string>
+    <string name="status_done">Selesai</string>
+
+    <!--Settings-->
+    <string name="settings_title">Settings</string>
+
+    <!--Booking History-->
+    <string name="booking_history_title">Riwayat Panggilan</string>
+
+    <!--Error Message-->
+    <string name="error_connection">Connection error, please try again</string>
+    <string name="error_empty">Field must not be empty</string>
+    <string name="error_location_empty">Oops! We can\'t find your location</string>
+    <string name="error_aut_confirm_invalid_nik">NIK anda tidak terdaftar di database Disdukcapil Kab Purwakarta</string>
+    <string name="error_auth_confirm_digits">Harus 16 digit angka</string>
+
+    <!--Forgot Password-->
+    <string name="reset_your_password">Reset Your Password</string>
+    <string name="please_enter_your_email_address">Please enter your email address.</string>
+
+    <!--Splash Screen-->
+    <string name="splash_purwakarta">Purwakarta</string>
+    <string name="splash_purwakarta_chant">Purwakarta Istimewa Jaya di Buana</string>
+
+    <!--Auth Confirmation-->
+    <string name="auth_confirm_domicile_title">Masukan domisili anda</string>
+    <string name="auth_confirm_domicile_caption">Pilih domisili anda berdasarkan data KTP anda</string>
+    <string name="auth_confirm_domicile_purwakarta">Kabupaten Purwakarta</string>
+    <string name="auth_confirm_domicile_non_purwa">Luar Kabupaten Purwakarta</string>
+    <string name="auth_confirm_ktp_title">Masukan nomor KTP anda</string>
+    <string name="auth_confirm_ktp_hint">Nomor KTP</string>
+
+    <!--Login-->
+    <string name="login_notice">*Pastikan isi data email dengan benar dan klik link aktivasi yg dikirimkan melalui email tersebut</string>
+
+    <!--Tour Search-->
+    <string name="tour_search_inp_hint">Search here…</string>
+
+    <!--Main Menu-->
+    <string name="menu_destinasi_wisata">Destinasi Wisata</string>
+    <string name="menu_laporan">Laporan Warga</string>
+    <string name="menu_semar">Sampurasun Ambulans</string>
+    <string name="menu_dokter">Sampurasun Dokter</string>
+    <string name="menu_bidan">Sampurasun Bidan</string>
+    <string name="menu_lokasi">Lokasi Penting</string>
+    <string name="menu_sos">Sampurasun Polisi</string>
+    <string name="menu_ojek">Sampurasun TOP</string>
+    <string name="menu_bursa">Sampurasun Bursa Kerja</string>
+
+    <!--Input Data Prompt-->
+    <string name="input_data_prompt_caption">Untuk menggunakan fitur ini anda harus penduduk Purwakarta.\nSegera isi nomor KTP anda untuk menggunakan fitur Laporan dan lainnya.</string>
+    <string name="input_data_input_now">Isi Sekarang</string>
+
+    <string name="call_ambulance">Panggil Ambulance</string>
+    <string name="try_again">Try Again</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="create_account">Buat Akun</string>
+    <string name="forgot_password">Lupa Password</string>
+    <string name="register">Daftar</string>
+    <string name="nama">Nama</string>
+    <string name="no_ktp">Nomor KTP</string>
+    <string name="phone_number">Nomor Telepon</string>
+    <string name="address">Alamat</string>
+    <string name="profile">Profil</string>
+    <string name="logout">Logout</string>
+    <string name="cancel">Cancel</string>
+    <string name="batal">Batal</string>
+    <string name="reset">Reset</string>
+    <string name="waiting_caption">Kami akan segera memproses panggilan anda.\nHarap menunggu</string>
+    <string name="complete">Complete</string>
+    <string name="complete_caption">Ambulance sedang dalam perjalanan …</string>
+    <string name="complete_caption_doctor">Dokter sedang dalam perjalanan …</string>
+    <string name="complete_caption_bidan">Bidan sedang dalam perjalanan …</string>
+    <string name="save">Simpan</string>
+    <string name="close">Close</string>
+    <string name="driver_name">Nama Supir</string>
+    <string name="plat">Plat</string>
+    <string name="ambulance">Ambulans</string>
+    <string name="call_doctor">Panggil Dokter\nUmum</string>
+    <string name="call_bidan">Panggil Bidan</string>
+    <string name="bpjs_number">Nomor BPJS</string>
+    <string name="rekam_medis">Riwayat User</string>
+    <string name="notif">Notifikasi</string>
+    <string name="riwayat_panggilan">Riwayat Panggilan</string>
+    <string name="status_jampis">Status Jampis</string>
+    <string name="data">Data</string>
+    <string name="drupadi">Drupadi</string>
+    <string name="rs_puskesmas">RS/ Puskesmas\nTerdekat</string>
+    <string name="jenis_penyakit">Jenis Penyakit</string>
+    <string name="rspuskesmas">RS/ Puskesmas</string>
+    <string name="date">Tanggal</string>
+    <string name="tindakan">Tindakan</string>
+    <string name="doctor_name">Nama Dokter</string>
+    <string name="bidan_name">Nama Bidan</string>
+    <string name="waktu">Waktu</string>
+    <string name="jenis_panggilan">Jenis Panggilan</string>
+    <string name="nama_sopir">Nama Sopir</string>
+    <string name="nama_dokter">Nama Dokter</string>
+    <string name="no_polisi">No. Polisi</string>
+    <string name="selesai">Selesai</string>
+
+    <!--Patient Data-->
+    <string name="patient_data_title">Data Pasien</string>
+    <string name="patient_data_input_patient_data">Isi data diri pasien</string>
+    <string name="patient_data_name">Nama Pasien</string>
+    <string name="patient_data_ktp">Nomor KTP Pasien</string>
+    <string name="patient_data_notice">*Dalam keadaan darurat, form ini dapat di isi nanti setelah keadaan memungkinkan</string>
+
+    <!--REGISTER MESSAGE-->
+    <string name="message_email_verification">Silahkan verifikasi email anda terlebih dahulu sebelum login</string>
+    <string name="cancel_prompt">Batalkan?</string>
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
+    <string name="get_direction">Get Direction</string>
+    <string name="error_no_data">No Data Yet</string>
+
+    <!--SOS-->
+    <string name="sos_thank_you">TERIMA KASIH \n\nPanggilan anda akan segera\nditindak lanjuti</string>
+
+    <!--Patient Data-->
+    <string name="patient_data_services_label">Layanan kesehatan yang digunakan</string>
+
+    <!--Booking Wait-->
+    <string name="booking_wait_insert_data">Isi Data</string>
+    <string name="booking_wait_notice">*Pastikan data diri pasien sudah anda isi untuk memudahkan proses verifikasi</string>
+    <string name="booking_wait_caption">Ambulans sedang dalam perjalanan..</string>
+
+    <!--Comment-->
+    <string name="comment_write_here">Tulis disini</string>
+
+    <!--Profile-->
+    <string name="profile_change_domicile">Ganti Domisili</string>
+    <string name="profile_data_pribadi">Data Pribadi</string>
+    <string name="profile_username">Username</string>
+    <string name="profile_name">Nama Lengkap</string>
+    <string name="profile_dob">Tanggal Lahir</string>
+    <string name="profile_mother_name">Nama Ibu Kandung</string>
+    <string name="profile_civil_data">Data Kependudukan</string>
+    <string name="profile_family_list">Daftar Anggota Keluarga</string>
+    <string name="profile_status">Status ( suami, istri, ayah etc)</string>
+    <string name="profile_add_family">Tambah Keluarga</string>
+
+    <!--Family Picker-->
+    <string name="family_picker_choose_family">Pilih Keluarga</string>
+
+    <!--Poi Overlay-->
+    <string name="poi_overlay_information">Informasi</string>
+    <string name="poi_overlay_available_rooms">Kamar Tersedia</string>
+
+    <!--Report History-->
+    <string name="report_history_title">Riwayat Laporan</string>
+    <string name="report_history_process_caption">Laporan sedang diporoses</string>
+    <string name="report_history_done_caption">Laporan Selesai</string>
+    <string name="report_history_wait_caption">Laporan terbaru</string>
+
+    <string name="poi_overlay_status_doctor">Status Dokter</string>
+    <string name="poi_overlay_status_bidan">Status Bidan</string>
+    <string name="poi_overlay_puskesmas">Puskesmas</string>
+    <string name="report_success_caption">Laporan anda akan di verifikasi dahulu, pantau melalui halaman profil</string>
+    <string name="report_success_title">Terima kasih</string>
+    <string name="atm_beras_unit_code">Kode Unit</string>
+    <string name="atm_beras_total_stock">Jumlah Stok Beras</string>
+    <string name="atm_beras_stock_percentage">Presentasi Stok Beras</string>
+    <string name="email_username">Email / Username</string>
+
+</resources>

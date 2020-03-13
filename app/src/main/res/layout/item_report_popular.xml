@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/spacing_normal">
+
+    <ImageView
+        android:id="@+id/item_report_popular_img_report"
+        android:layout_width="118dp"
+        android:layout_height="94dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_splash"/>
+
+</RelativeLayout>

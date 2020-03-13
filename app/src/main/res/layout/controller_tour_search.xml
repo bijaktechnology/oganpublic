@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/tour_search_btn_back"
+        android:layout_width="?actionBarSize"
+        android:layout_height="?actionBarSize"
+        android:background="?selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_arrow_back"
+        android:tint="@color/black"/>
+
+    <EditText
+        android:id="@+id/tour_search_inp_search"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_toRightOf="@+id/tour_search_btn_back"
+        android:background="@null"
+        android:hint="@string/tour_search_inp_hint"
+        android:inputType="text"
+        android:paddingLeft="@dimen/spacing_normal"
+        android:paddingRight="@dimen/spacing_normal"/>
+
+    <View
+        style="@style/MaterialShadow"
+        android:layout_below="@+id/tour_search_inp_search"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/tour_search_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tour_search_inp_search"/>
+
+    <ProgressBar
+        android:id="@+id/tour_search_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/dialog_report_img_report"
+        android:layout_width="match_parent"
+        android:layout_height="171dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_splash"/>
+
+    <TextView
+        android:id="@+id/dialog_report_txt_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dialog_report_img_report"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/spacing_normal"
+        android:layout_marginTop="@dimen/spacing_half"
+        android:background="@drawable/bg_status_wait"
+        android:paddingBottom="@dimen/spacing_half"
+        android:paddingLeft="@dimen/spacing_double"
+        android:paddingRight="@dimen/spacing_double"
+        android:paddingTop="@dimen/spacing_half"
+        android:text="Menunggu"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_tiny_body"/>
+
+    <LinearLayout
+        android:id="@+id/dialog_report_view_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_report_img_report"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_double">
+
+        <TextView
+            android:id="@+id/dialog_report_txt_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4a4a4a"
+            android:textSize="@dimen/text_small_body"
+            tools:text="Jalan bolong"/>
+
+        <TextView
+            android:id="@+id/dialog_report_txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:textColor="#4a4a4a"
+            android:textSize="@dimen/text_small_body"
+            tools:text="Laporan sedang diproses oleh petugas dari dinas…"/>
+
+        <TextView
+            android:id="@+id/dialog_report_txt_dinas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_double"
+            android:textColor="#4a4a4a"
+            android:textSize="@dimen/text_small_body"
+            tools:text="Dinas Bina Marga"/>
+
+        <TextView
+            android:id="@+id/dialog_report_txt_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:textColor="#4a4a4a"
+            android:textSize="@dimen/text_small_body"
+            tools:text="7 hari lalu ( selesai dalam 17 jam)"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/dialog_report_view_bottom"
+        android:background="@color/colorGrey"/>
+</RelativeLayout>

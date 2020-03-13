@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:id="@+id/titlebar_action_button"
+        android:layout_width="56dp"
+        android:layout_height="match_parent"
+        android:background="?selectableItemBackgroundBorderless"
+        tools:ignore="ContentDescription"/>
+
+    <ImageButton
+        android:id="@+id/titlebar_action_right_button"
+        android:layout_width="56dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="?selectableItemBackgroundBorderless"
+        android:visibility="gone"
+        tools:ignore="ContentDescription"/>
+
+    <TextView
+        android:id="@+id/titlebar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:gravity="center"
+        android:paddingLeft="@dimen/spacing_double"
+        android:paddingRight="@dimen/spacing_double"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/titlebar_caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titlebar_title"
+        android:gravity="center"
+        android:textColor="@color/light_gray"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:layout_centerInParent="true"
+        android:layout_width="?actionBarSize"
+        android:layout_height="?actionBarSize"
+        android:src="@drawable/ic_logo_big"/>
+
+    <View
+        android:id="@+id/titlebar_divider"
+        android:layout_width="72dp"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/light_gray"/>
+
+</merge>

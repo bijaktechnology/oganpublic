@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/item_bookmark_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="@dimen/spacing_double"
+        android:layout_marginTop="@dimen/spacing_double"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_splash"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_bookmark_image"
+        android:layout_alignTop="@+id/item_bookmark_image"
+        android:layout_marginLeft="@dimen/spacing_double"
+        android:layout_marginRight="@dimen/spacing_double"
+        android:layout_toRightOf="@+id/item_bookmark_image"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_bookmark_txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jalan Bolong"
+            android:textSize="@dimen/text_large_body"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/item_bookmark_txt_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_half"
+            android:lineSpacingExtra="@dimen/spacing_half"
+            android:text="5 Feb 2017 04:30 PM"
+            android:textSize="@dimen/text_small_body"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/item_bookmark_txt_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_half"
+            android:background="@drawable/bg_status_wait"
+            android:paddingBottom="@dimen/spacing_half"
+            android:paddingLeft="@dimen/spacing_double"
+            android:paddingRight="@dimen/spacing_double"
+            android:paddingTop="@dimen/spacing_half"
+            android:text="Menunggu"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_tiny_body"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/item_bookmark_image"
+        android:layout_marginTop="@dimen/spacing_double"
+        android:background="@color/colorGrey"/>
+
+</RelativeLayout>

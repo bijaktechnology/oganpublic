@@ -1,0 +1,146 @@
+{
+  "project_info": {
+    "project_number": "192836561071",
+    "firebase_url": "https://ogan-f70fd.firebaseio.com",
+    "project_id": "ogan-f70fd",
+    "storage_bucket": "ogan-f70fd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192836561071:android:c9c4f818b3dc6aae",
+        "android_client_info": {
+          "package_name": "com.satulingkaran.oganlopian.officer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192836561071-14r9rs2lrogfk9uao4t15gkbeqarriqi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWIoHklPCqim0doPCh_7e8yNyKi6XytcI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192836561071:android:716e7f7f94e9141e",
+        "android_client_info": {
+          "package_name": "com.satulingkaran.ambulanceapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192836561071-tem2f01uhdi59c6jatl3ckaflc7affhm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.satulingkaran.ambulanceapp",
+            "certificate_hash": "217699e3b5bc9301168e6f7efe6fd6cc10fcee38"
+          }
+        },
+        {
+          "client_id": "192836561071-14r9rs2lrogfk9uao4t15gkbeqarriqi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWIoHklPCqim0doPCh_7e8yNyKi6XytcI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192836561071-14r9rs2lrogfk9uao4t15gkbeqarriqi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192836561071:android:82a7124c61cf5926",
+        "android_client_info": {
+          "package_name": "com.satulingkaran.oganlopian"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192836561071-etmf2onpm3dd8t480ehq269ad34bir4e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.satulingkaran.oganlopian",
+            "certificate_hash": "7c55c6fc50682e7a64e207d250b0a57cb679d997"
+          }
+        },
+        {
+          "client_id": "192836561071-soa8jcoa3615r37kl6vbsfbcnej3golh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.satulingkaran.oganlopian",
+            "certificate_hash": "e7fd1fcf637f462a00581f0efc772b17a617e924"
+          }
+        },
+        {
+          "client_id": "192836561071-s068eigahu6cei5hil3ml4n0i80m7ouk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.satulingkaran.oganlopian",
+            "certificate_hash": "217699e3b5bc9301168e6f7efe6fd6cc10fcee38"
+          }
+        },
+        {
+          "client_id": "192836561071-14r9rs2lrogfk9uao4t15gkbeqarriqi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWIoHklPCqim0doPCh_7e8yNyKi6XytcI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192836561071-14r9rs2lrogfk9uao4t15gkbeqarriqi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

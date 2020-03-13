@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_splash">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#4FFF"/>
+
+        <ImageView
+            android:id="@+id/register_img"
+            android:layout_width="148dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/view_padding_bigger"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_logo_ogan"
+            tools:ignore="ContentDescription"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_img"
+            android:layout_margin="@dimen/spacing_triple"
+            android:background="@drawable/bg_white_rounded"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/ProfileComponent.TextInputLayout.Register"
+                android:layout_marginTop="@dimen/spacing_triple">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/register_inp_username"
+                    style="@style/ProfileComponent.EditText"
+                    android:hint="@string/profile_username"
+                    android:inputType="text"
+                    tools:text="Awkarin"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/ProfileComponent.TextInputLayout.Register"
+                android:layout_marginTop="@dimen/spacing_normal">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/register_inp_email"
+                    style="@style/ProfileComponent.EditText"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    tools:text="esa@esa.com"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/ProfileComponent.TextInputLayout.Register"
+                android:layout_marginTop="@dimen/spacing_normal"
+                app:passwordToggleEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/register_inp_password"
+                    style="@style/ProfileComponent.EditText"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    tools:text="esa@esa.com"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/ProfileComponent.TextInputLayout.Register"
+                android:layout_marginTop="@dimen/spacing_normal">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/register_inp_name"
+                    style="@style/ProfileComponent.EditText"
+                    android:hint="@string/profile_name"
+                    android:inputType="text"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/ProfileComponent.TextInputLayout.Register"
+                android:layout_marginTop="@dimen/spacing_normal">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/register_inp_dob"
+                    style="@style/ProfileComponent.EditText"
+                    android:hint="@string/profile_dob"
+                    android:inputType="none"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/ProfileComponent.TextInputLayout.Register"
+                android:layout_marginTop="@dimen/spacing_normal">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/register_inp_mother_name"
+                    style="@style/ProfileComponent.EditText"
+                    android:hint="@string/profile_mother_name"
+                    android:inputType="text"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/ProfileComponent.TextInputLayout.Register"
+                android:layout_marginTop="@dimen/spacing_normal">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/register_inp_phone"
+                    style="@style/ProfileComponent.EditText"
+                    android:hint="@string/phone_number"
+                    android:inputType="phone"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/register_btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/spacing_double"
+                android:background="@drawable/btn_accent_rounded"
+                android:text="@string/register"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

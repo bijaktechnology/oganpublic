@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/spacing_double"
+    android:layout_marginLeft="@dimen/spacing_double"
+    android:layout_marginRight="@dimen/spacing_double"
+    android:background="@drawable/bg_white_rounded"
+    android:orientation="vertical"
+    android:padding="@dimen/spacing_double">
+
+    <TextView
+        style="@style/ItemFamilyLabel"
+        android:text="@string/profile_name"/>
+
+    <TextView
+        android:id="@+id/item_family_txt_name"
+        style="@style/ItemFamilyText"
+        tools:text="Heyo GG"/>
+
+    <TextView
+        style="@style/ItemFamilyLabel"
+        android:layout_marginTop="@dimen/spacing_double"
+        android:text="@string/profile_status"/>
+
+    <TextView
+        android:id="@+id/item_family_txt_status"
+        style="@style/ItemFamilyText"
+        tools:text="Heyo GG"/>
+
+    <TextView
+        style="@style/ItemFamilyLabel"
+        android:layout_marginTop="@dimen/spacing_double"
+        android:text="@string/no_ktp"/>
+
+    <TextView
+        android:id="@+id/item_family_txt_ktp"
+        style="@style/ItemFamilyText"
+        tools:text="Heyo GG"/>
+
+    <TextView
+        style="@style/ItemFamilyLabel"
+        android:layout_marginTop="@dimen/spacing_double"
+        android:text="@string/profile_dob"/>
+
+    <TextView
+        android:id="@+id/item_family_txt_dob"
+        style="@style/ItemFamilyText"
+        tools:text="Heyo GG"/>
+
+    <TextView
+        style="@style/ItemFamilyLabel"
+        android:layout_marginTop="@dimen/spacing_double"
+        android:text="@string/profile_mother_name"/>
+
+    <TextView
+        android:id="@+id/item_family_txt_mother_name"
+        style="@style/ItemFamilyText"
+        tools:text="Heyo GG"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_double">
+
+        <Button
+            android:id="@+id/item_family_btn_delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/spacing_normal"
+            android:layout_weight="1"
+            android:background="@drawable/btn_accent_outline"
+            android:text="@string/delete"
+            android:textColor="@color/colorAccent"/>
+
+        <Button
+            android:id="@+id/item_family_btn_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_normal"
+            android:layout_weight="1"
+            android:background="@drawable/btn_primary_outline"
+            android:text="@string/edit"
+            android:textColor="?colorPrimary"/>
+
+    </LinearLayout>
+
+</LinearLayout>

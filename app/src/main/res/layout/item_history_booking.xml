@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/spacing_double"
+              android:paddingLeft="@dimen/spacing_triple"
+              android:paddingRight="@dimen/spacing_triple"
+              android:paddingTop="@dimen/spacing_double">
+
+    <TextView
+        android:id="@+id/item_history_booking_txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="5.5sp"
+        android:textColor="#4a4a4a"
+        android:textSize="14sp"
+        tools:text="Pemesanan ambulans"/>
+
+    <TextView
+        android:id="@+id/item_history_booking_txt_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_normal"
+        android:lineSpacingExtra="5.5sp"
+        android:textColor="#4a4a4a"
+        android:textSize="12sp"
+        tools:text="Pemesanan ambulans"/>
+
+    <View
+        style="@style/HorizontalDivider"
+        android:layout_marginTop="@dimen/spacing_double"/>
+
+</LinearLayout>

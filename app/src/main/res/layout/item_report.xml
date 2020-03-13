@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackground"
+    android:paddingTop="@dimen/spacing_double">
+
+    <LinearLayout
+        android:id="@+id/item_report_view_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/spacing_double"
+        android:paddingRight="@dimen/spacing_double">
+
+        <ImageView
+            android:id="@+id/item_report_img_avatar"
+            android:layout_width="@dimen/dimen_40dp"
+            android:layout_height="@dimen/dimen_40dp"
+            tools:src="@drawable/ic_ambulance"/>
+
+        <TextView
+            android:id="@+id/item_report_txt_love"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_triple"
+            android:background="?selectableItemBackgroundBorderless"
+            android:drawablePadding="@dimen/spacing_half"
+            android:drawableTop="@drawable/ic_love"
+            android:gravity="center"
+            android:padding="@dimen/spacing_normal"
+            android:textSize="@dimen/text_small_body"
+            tools:text="25"/>
+
+        <TextView
+            android:id="@+id/item_report_txt_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_triple"
+            android:background="?selectableItemBackgroundBorderless"
+            android:drawablePadding="@dimen/spacing_normal"
+            android:drawableTop="@drawable/ic_comment"
+            android:gravity="center"
+            android:padding="@dimen/spacing_half"
+            android:textSize="@dimen/text_small_body"
+            tools:text="15"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_report_view_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/item_report_view_left"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_report_txt_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4a4a4a"
+            android:textSize="@dimen/text_large_body"
+            tools:text="Sarah"/>
+
+        <TextView
+            android:id="@+id/item_report_txt_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_half"
+            android:textColor="#4a4a4a"
+            android:textSize="@dimen/text_tiny_body"
+            tools:text="Jl. Jend Sudirman.."/>
+
+        <TextView
+            android:id="@+id/item_report_txt_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_tiny"
+            android:textColor="#4a4a4a"
+            android:textSize="@dimen/text_tiny_body"
+            tools:text="7 Jam Lalu"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/spacing_double"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/item_report_txt_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/spacing_normal"
+            android:textColor="#6e6e6e"
+            android:textSize="@dimen/text_tiny_body"
+            tools:text="Jalan Rusak"/>
+
+        <ImageView
+            android:id="@+id/item_report_img_category"
+            android:layout_width="@dimen/view_padding_bigger"
+            android:layout_height="@dimen/view_padding_bigger"
+            tools:src="@drawable/ic_banjir"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/item_report_img_report"
+        android:layout_width="match_parent"
+        android:layout_height="163dp"
+        android:layout_below="@+id/item_report_view_top"
+        android:layout_marginRight="@dimen/spacing_double"
+        android:layout_marginTop="@dimen/spacing_normal"
+        android:layout_toRightOf="@+id/item_report_view_left"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_splash"/>
+
+    <TextView
+        android:id="@+id/item_task_txt_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_report_img_report"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/spacing_half"
+        android:background="@drawable/bg_status_wait"
+        android:paddingBottom="@dimen/spacing_half"
+        android:paddingLeft="@dimen/spacing_double"
+        android:paddingRight="@dimen/spacing_double"
+        android:paddingTop="@dimen/spacing_half"
+        android:text="Menunggu"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_tiny_body"/>
+
+    <TextView
+        android:id="@+id/item_report_txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_report_img_report"
+        android:layout_marginRight="@dimen/spacing_double"
+        android:layout_marginTop="@dimen/spacing_normal"
+        android:layout_toRightOf="@+id/item_report_view_left"
+        android:textColor="#4a4a4a"
+        android:textSize="@dimen/text_body"
+        tools:text="Jalan bolong"/>
+
+    <TextView
+        android:id="@+id/item_report_txt_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_report_txt_title"
+        android:layout_marginRight="@dimen/spacing_double"
+        android:layout_marginTop="@dimen/spacing_half"
+        android:layout_toRightOf="@+id/item_report_view_left"
+        android:textColor="#4a4a4a"
+        android:textSize="@dimen/text_small_body"
+        tools:text="Jalan di dekat jembatan rusak, apalagi ketika hujan akan sangat macet lorem ipsum dolor"/>
+
+    <TextView
+        android:id="@+id/item_report_txt_see_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_report_txt_desc"
+        android:layout_marginTop="@dimen/spacing_half"
+        android:layout_toRightOf="@+id/item_report_view_left"
+        android:text="...see more"
+        android:textColor="#4a4a4a"
+        android:textSize="@dimen/text_small_body"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/item_report_txt_see_more"
+        android:layout_marginTop="@dimen/spacing_double"
+        android:background="@color/colorGrey"/>
+
+</RelativeLayout>

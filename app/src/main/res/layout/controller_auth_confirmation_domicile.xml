@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_triple">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/auth_confirm_domicile_title"
+            android:textColor="@color/gray_69"
+            android:textSize="@dimen/text_body"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_triple"
+            android:lineSpacingExtra="5.5sp"
+            android:text="@string/auth_confirm_domicile_caption"
+            android:textColor="@color/gray_4a"
+            android:textSize="@dimen/text_small_body"
+            />
+
+        <RadioGroup
+            android:id="@+id/confirmation_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_triple">
+
+            <RadioButton
+                android:id="@+id/confirmation_radio_purwakarta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/spacing_normal"
+                android:text="@string/auth_confirm_domicile_purwakarta"
+                android:textColor="@color/gray_4a"/>
+
+            <RadioButton
+                android:id="@+id/confirmation_radio_non_purwakarta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:paddingLeft="@dimen/spacing_normal"
+                android:text="@string/auth_confirm_domicile_non_purwa"
+                android:textColor="@color/gray_4a"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/auth_confirm_btn_next"
+        android:layout_width="@dimen/dimen_56dp"
+        android:layout_height="@dimen/dimen_56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/spacing_triple"
+        android:background="@drawable/btn_circle_white"
+        android:elevation="@dimen/spacing_double"
+        android:src="@drawable/ic_green_arrow"
+        tools:ignore="ContentDescription"/>
+
+</RelativeLayout>

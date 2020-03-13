@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/map_input_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/map_input_container_bottom">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/map_input_center_view"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_marker_generic"
+            tools:ignore="ContentDescription"/>
+
+        <View
+            android:id="@+id/map_input_center_view"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/map_input_container_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/spacing_normal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_triple"
+            android:text="Apakah lokasi anda telah sesuai ?"
+            android:textColor="#4a4a4a"
+            android:textSize="16.5sp"/>
+
+        <TextView
+            android:id="@+id/map_input_txt_address"
+            fontPath="fonts/avenir_medium.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:maxLines="2"
+            android:textColor="#4a4a4a"
+            android:textSize="16sp"
+            tools:ignore="MissingPrefix"
+            tools:text="Jl. Jend Sudirman"/>
+
+        <Button
+            android:id="@+id/map_input_btn_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_double"
+            android:layout_marginTop="@dimen/spacing_half"
+            android:background="@drawable/bg_status_done"
+            android:paddingBottom="@dimen/spacing_half"
+            android:paddingLeft="@dimen/spacing_double"
+            android:paddingRight="@dimen/spacing_double"
+            android:paddingTop="@dimen/spacing_half"
+            android:text="Ya, sesuai"
+            android:textAllCaps="false"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/map_input_btn_my_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/map_input_container_bottom"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/spacing_double"
+        android:layout_marginRight="@dimen/spacing_double"
+        android:src="@drawable/ic_my_location"
+        android:tint="?colorPrimary"
+        app:backgroundTint="@color/white"
+        app:fabSize="normal"
+        app:rippleColor="@color/aggresive_red"/>
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnCall" type="id"/>
+
+    <!--TextView-->
+    <item name="txtDriverName" type="id"/>
+    <item name="txtPlat" type="id"/>
+
+    <!--Button-->
+    <item name="btnCancel" type="id"/>
+
+</resources>
